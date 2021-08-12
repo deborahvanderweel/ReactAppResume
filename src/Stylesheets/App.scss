@@ -1,0 +1,15 @@
+@import '_Index';
+@import '_About';
+@import '_Experience';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './Stylesheets/App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './Fonts/Montserrat-Bold.ttf';
+import './Fonts/Montserrat-Regular.ttf';
+import './Fonts/Montserrat-Light.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

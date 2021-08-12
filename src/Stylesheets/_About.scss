@@ -1,0 +1,20 @@
+.aboutMe {
+    background-color: white;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+
+    .hello {
+        font-family: 'Montserrat-Bold';
+        font-size: 100px;
+    }
+
+    .name {
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+    }
+}
