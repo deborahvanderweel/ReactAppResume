@@ -4,5 +4,5 @@ export const profile = [{
     age: "27",
     town: "Rotterdam",
     country: "The Netherlands",
-    aboutme: "A 27 year old nerd who loves cats, kpop music and other things yes"
+    aboutme: "A 27 year old nerd who loves cats, kpop music and has a huge collection of toys."
 }]
