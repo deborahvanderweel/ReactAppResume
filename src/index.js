@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './Fonts/Montserrat-Bold.ttf';
 import './Fonts/Montserrat-Regular.ttf';
 import './Fonts/Montserrat-Light.ttf';
+import './Fonts/Montserrat-Medium.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

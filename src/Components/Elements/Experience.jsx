@@ -14,7 +14,7 @@ export default class Experience extends Component {
                         <p className="jobTitle">{work.jobTitle} </p>
                         <p className="jobTitle">| {work.companyName}</p>
                         <p className="workYears">{work.years}</p>
-                        <p>{work.place}</p>
+                        <p className="city">{work.place}</p>
                     </div>
                     <div className="experienceSkills">
                         <p>{work.information}</p>

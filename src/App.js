@@ -1,13 +1,13 @@
 import './Stylesheets/App.css';
 import "animate.css/animate.min.css";
-import About from './Components/Elements/About.js';
-import Experience from './Components/Elements/Experience.js';
+import About from './Components/Elements/About.jsx';
+import ExperienceList from './Components/Elements/ExperienceList.jsx';
 
 function App() {
   return (
     <div className="App">
       <About />
-      <Experience />
+      <ExperienceList />
     </div>
   );
 }

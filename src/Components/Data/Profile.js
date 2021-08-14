@@ -1,8 +1,8 @@
 export const profile = [{
     name: "Deborah van der Weel",
-    job: "Digital Developer @ Coolblue",
+    job: "Currently working as a Digital Developer @ Coolblue in Rotterdam, The Netherlands",
     age: "27",
     town: "Rotterdam",
-    country: "The Netherlands"
-
+    country: "The Netherlands",
+    aboutme: "A 27 year old nerd who loves cats, kpop music and other things yes"
 }]

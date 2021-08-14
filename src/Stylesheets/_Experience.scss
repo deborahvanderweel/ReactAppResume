@@ -3,12 +3,18 @@
     height: 100vh;
     scroll-snap-align: start;
     display: flex;
-    justify-content: center;
     color: black;
     flex-direction: column;
 
+    .experienceTitle {
+        font-family: 'Montserrat-Bold';
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 20px;
+    }
+
     .experience {
-        padding: 40px;
+        padding: 20px 20px 10px 20px;
         align-self: center;
         flex-direction: column;
     }
@@ -19,8 +25,6 @@
         margin-bottom: 25px;
 
         .experienceCompany {
-            width: 350px;
-
             .workYears {
                 font-family: 'Montserrat-Bold';
                 font-size: 20px;
@@ -33,7 +37,6 @@
         }
 
         .experienceSkills {
-            width: 450px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -81,3 +84,86 @@
         }
     }
 }
+
+// mobile device
+@media (max-width: 768px) {
+    .experienceList {
+        .experienceInfo {
+            max-width: 768px;
+            margin-bottom: 15px;
+
+            .experienceCompany {
+                min-width: 150px;
+                max-width: 250px;
+                margin-right: 20px;
+
+                .workYears {
+                    font-size: 13px;
+                }
+
+                .jobTitle {
+                    font-size: 14px;
+                }
+
+                .city {
+                    font-size: 12px;
+                }
+            }
+
+            .experienceSkills {
+                max-width: 450px;
+                font-size: 14px;
+            }
+        }
+
+        .experienceLanguages {
+            display: flex;
+            flex-flow: wrap;
+            max-width: 768px;
+
+            .default {
+                font-size: 11px;
+                line-height: 1.23536;
+                display: inline-block;
+                font-weight: 600;
+                letter-spacing: -.022em;
+                font-family: "Menlo";
+                max-width: 150px;
+                padding-left: 22px;
+                padding-right: 22px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-radius: 22px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+// tablet device
+@media (min-width: 768px) {
+    .hello {
+        font-size: 50px;
+    }
+
+    .iAm {
+        font-size: 30px;
+    }
+}
+
+// laptop device
+@media (min-width: 1024px) {
+    .hello {
+        font-size: 60px;
+    }
+
+    .iAm {
+        font-size: 40px;
+    }
+}
+
+// desktop device
+@media (min-width: 1200px) {}
+
+// bigger devices
+@media (min-width: 1201px) {}

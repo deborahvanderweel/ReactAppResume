@@ -16,7 +16,7 @@
 }
 
 // mobile device
-@media (min-width: 480px) {
+@media (max-width: 768px) {
     .hello {
         font-size: 30px;
     }

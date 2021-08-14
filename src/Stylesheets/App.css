@@ -56,7 +56,7 @@ code {
   text-transform: uppercase;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 768px) {
   .hello {
     font-size: 30px;
   }
@@ -90,9 +90,6 @@ code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -100,8 +97,15 @@ code {
           flex-direction: column;
 }
 
+.experienceList .experienceTitle {
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 20px;
+}
+
 .experienceList .experience {
-  padding: 40px;
+  padding: 20px 20px 10px 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -121,10 +125,6 @@ code {
   margin-bottom: 25px;
 }
 
-.experienceList .experienceInfo .experienceCompany {
-  width: 350px;
-}
-
 .experienceList .experienceInfo .experienceCompany .workYears {
   font-family: 'Montserrat-Bold';
   font-size: 20px;
@@ -136,7 +136,6 @@ code {
 }
 
 .experienceList .experienceInfo .experienceSkills {
-  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +185,72 @@ code {
 .experienceList .experienceLanguages .blue {
   color: blue;
   border: 2px solid blue;
+}
+
+@media (max-width: 768px) {
+  .experienceList .experienceInfo {
+    max-width: 768px;
+    margin-bottom: 15px;
+  }
+  .experienceList .experienceInfo .experienceCompany {
+    min-width: 150px;
+    max-width: 250px;
+    margin-right: 20px;
+  }
+  .experienceList .experienceInfo .experienceCompany .workYears {
+    font-size: 13px;
+  }
+  .experienceList .experienceInfo .experienceCompany .jobTitle {
+    font-size: 14px;
+  }
+  .experienceList .experienceInfo .experienceCompany .city {
+    font-size: 12px;
+  }
+  .experienceList .experienceInfo .experienceSkills {
+    max-width: 450px;
+    font-size: 14px;
+  }
+  .experienceList .experienceLanguages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    max-width: 768px;
+  }
+  .experienceList .experienceLanguages .default {
+    font-size: 11px;
+    line-height: 1.23536;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -.022em;
+    font-family: "Menlo";
+    max-width: 150px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 22px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hello {
+    font-size: 50px;
+  }
+  .iAm {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hello {
+    font-size: 60px;
+  }
+  .iAm {
+    font-size: 40px;
+  }
 }
 
 * {

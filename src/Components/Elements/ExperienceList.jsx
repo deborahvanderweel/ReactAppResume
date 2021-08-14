@@ -7,6 +7,7 @@ export default class ExperienceList extends Component {
         console.log(workList)
         return (
             <div className="experienceList">
+                <p className="experienceTitle">Work Experience</p>
                 {workList.map(work => <Experience {...work} />)}
             </div>
         );
