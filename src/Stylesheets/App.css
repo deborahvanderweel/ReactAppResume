@@ -14,6 +14,11 @@
   src: local("Montserrat-Light"), url("../Fonts/Montserrat-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: local("Montserrat-Medium"), url("../Fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -45,30 +50,122 @@ code {
   color: black;
 }
 
-.aboutMe .hello {
-  font-family: 'Montserrat-Bold';
-  font-size: 100px;
-}
-
 .aboutMe .name {
   font-family: 'Montserrat-Bold';
-  font-size: 20px;
+  text-transform: uppercase;
 }
 
-.experience {
-  background-color: hotpink;
+.aboutMe .hello {
+  font-size: 50px;
+}
+
+.aboutMe .iAm {
+  font-size: 30px;
+}
+
+.experienceList {
+  background-color: white;
   height: 100vh;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experienceList .experience {
+  padding: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experienceList .experienceInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.experienceList .experienceInfo .experienceCompany {
+  width: 350px;
+}
+
+.experienceList .experienceInfo .experienceCompany .workYears {
+  font-family: 'Montserrat-Bold';
+  font-size: 20px;
+}
+
+.experienceList .experienceInfo .experienceCompany .jobTitle {
+  font-family: 'Montserrat-Regular';
+  font-size: 24px;
+}
+
+.experienceList .experienceInfo .experienceSkills {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experienceList .experienceLanguages .default {
+  border: 2px solid #1d1d1f;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  background: rgba(0, 0, 0, 0);
+  color: #1d1d1f;
+  font-size: 17px;
+  line-height: 1.23536;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: -.022em;
+  font-family: "Menlo";
+  max-width: 150px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 22px;
+}
+
+.experienceList .experienceLanguages .green {
+  color: green;
+  border: 2px solid green;
+}
+
+.experienceList .experienceLanguages .pink {
+  color: palevioletred;
+  border: 2px solid palevioletred;
+}
+
+.experienceList .experienceLanguages .purple {
+  color: purple;
+  border: 2px solid purple;
+}
+
+.experienceList .experienceLanguages .blue {
+  color: blue;
+  border: 2px solid blue;
 }
 
 * {
@@ -83,5 +180,6 @@ code {
   overflow: auto;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  font-family: 'Montserrat-Medium';
 }
 /*# sourceMappingURL=App.css.map */

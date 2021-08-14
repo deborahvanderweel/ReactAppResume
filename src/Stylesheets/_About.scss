@@ -8,13 +8,16 @@
     flex-direction: column;
     color: black;
 
-    .hello {
-        font-family: 'Montserrat-Bold';
-        font-size: 100px;
-    }
-
     .name {
         font-family: 'Montserrat-Bold';
-        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .hello {
+        font-size: 50px;
+    }
+
+    .iAm {
+        font-size: 30px;
     }
 }

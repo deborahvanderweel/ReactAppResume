@@ -1,9 +1,83 @@
-.experience {
-    background-color: hotpink;
+.experienceList {
+    background-color: white;
     height: 100vh;
     scroll-snap-align: start;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
+    flex-direction: column;
+
+    .experience {
+        padding: 40px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .experienceInfo {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+
+        .experienceCompany {
+            width: 350px;
+
+            .workYears {
+                font-family: 'Montserrat-Bold';
+                font-size: 20px;
+            }
+
+            .jobTitle {
+                font-family: 'Montserrat-Regular';
+                font-size: 24px;
+            }
+        }
+
+        .experienceSkills {
+            width: 450px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+
+    .experienceLanguages {
+        .default {
+            border: 2px solid #1d1d1f;
+            transition: all 350ms ease-in-out;
+            background: rgba(0, 0, 0, 0);
+            color: #1d1d1f;
+            font-size: 17px;
+            line-height: 1.23536;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: -.022em;
+            font-family: "Menlo";
+            max-width: 150px;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 22px;
+        }
+
+        .green {
+            color: green;
+            border: 2px solid green;
+        }
+
+        .pink {
+            color: palevioletred;
+            border: 2px solid palevioletred;
+        }
+
+        .purple {
+            color: purple;
+            border: 2px solid purple;
+        }
+
+        .blue {
+            color: blue;
+            border: 2px solid blue;
+        }
+    }
 }
