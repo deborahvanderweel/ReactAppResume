@@ -48,6 +48,7 @@ code {
       -ms-flex-direction: column;
           flex-direction: column;
   color: black;
+  padding: 25px;
 }
 
 .aboutMe .name {
@@ -55,12 +56,31 @@ code {
   text-transform: uppercase;
 }
 
-.aboutMe .hello {
-  font-size: 50px;
+@media (min-width: 480px) {
+  .hello {
+    font-size: 30px;
+  }
+  .iAm {
+    font-size: 20px;
+  }
 }
 
-.aboutMe .iAm {
-  font-size: 30px;
+@media (min-width: 768px) {
+  .hello {
+    font-size: 50px;
+  }
+  .iAm {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hello {
+    font-size: 60px;
+  }
+  .iAm {
+    font-size: 40px;
+  }
 }
 
 .experienceList {
