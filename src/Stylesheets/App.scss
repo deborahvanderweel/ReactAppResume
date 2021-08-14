@@ -1,6 +1,7 @@
 @import '_Index';
 @import '_About';
 @import '_Experience';
+@import '_Personal';
 
 * {
   margin: 0;
@@ -13,4 +14,33 @@
   overflow: auto;
   scroll-snap-type: y mandatory;
   font-family: 'Montserrat-Medium';
+
+  .bottomTitle {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat-Light';
+    margin-top: auto;
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottomTitle {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottomTitle {
+    margin-bottom: 90px;
+  }
+}
+
+// laptop device
+@media (min-width: 1024px) {
+  .bottomTitle {
+    margin-bottom: 10px;
+  }
 }
