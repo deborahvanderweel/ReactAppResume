@@ -12,10 +12,14 @@ export default class About extends Component {
                     return (
                         <div style={{ marginTop: 'auto' }} key={key}>
                             <div className="name">
-                                <p className="hello">Hello &#128075;</p>
-                                <p className="iAm">I'm {data.name}</p>
+                                <p className="hello">Hi! &#128075;</p>
                             </div>
-                            <div className="job">{data.aboutme}</div>
+                            <div className="job">{data.aboutme}
+                                <a href={data.jobUrl} style={{ color: '#0066ff' }}>{data.job}</a>
+                                {data.prev}
+                                <a href={data.jobUrl2} style={{ color: '#0066ff' }}>{data.job2}</a>
+                                {data.school}<a href={data.universityUrl} style={{ color: '#0066ff' }}>{data.university}</a>.
+                            </div>
                         </div>
                     );
                 })}

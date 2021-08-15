@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import { profile } from '../Data/Profile';
-
 
 export default class Personal extends Component {
-
     render() {
+        const card = this.props;
         return (
             <div className="personalDiv">
                 <div id="container">
                     <div class="productDetails">
-                        <p className="bigTitle">Toy collection</p>
-                        <p class="toyInfo">I've been collection toys for about 5 years now. It all started with a Back to the Future funko pop. I created an Instagram account called <b>lovetheloot</b> where I show my collection.</p>
+                        <p className="bigTitle">{card.title}</p>
+                        <p className="toyInfo">{card.information}</p>
+                        <a href={card.url} className="instagramUrl"><img className="instagramIcon" src={card.icon}></img> {card.label}</a>
                     </div>
-                    <div class="productImage"></div>
+                    <img src={card.image} className="productImage"></img>
                 </div>
-                <p className="bottomTitle">scroll for work experience</p>
             </div >
         )
     }

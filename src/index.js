@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './Stylesheets/App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './Fonts/Montserrat-Bold.ttf';
-import './Fonts/Montserrat-Regular.ttf';
-import './Fonts/Montserrat-Light.ttf';
-import './Fonts/Montserrat-Medium.ttf';
+import './Fonts/Inter-Bold.ttf';
+import './Fonts/Inter-SemiBold.ttf';
+import './Fonts/Inter-Regular.ttf';
+import './Fonts/Inter-Light.ttf';
+import './Fonts/Inter-Medium.ttf';
+import './Fonts/Gilroy-Light.otf';
+import './Fonts/Gilroy-ExtraBold.otf';
 
 ReactDOM.render(
   <React.StrictMode>

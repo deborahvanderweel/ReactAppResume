@@ -10,21 +10,37 @@
     color: black;
     padding: 25px 25px 10px 25px;
 
+    .job {
+        font-family: 'Inter-SemiBold';
+
+        a {
+            text-decoration: none;
+        }
+    }
+
     .name {
-        font-family: 'Montserrat-Bold';
-        text-transform: uppercase;
+        font-family: 'Gilroy-ExtraBold';
     }
 }
 
 // mobile device
 @media (max-width: 768px) {
     .hello {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 40px;
+        line-height: 42px;
     }
 
     .iAm {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .name {
+        margin-bottom: 20px;
+    }
+
+    .job {
+        line-height: 32px;
+        max-width: 350px;
     }
 }
 
@@ -39,8 +55,13 @@
         font-size: 30px;
     }
 
+    .name {
+        margin-bottom: 30px;
+    }
+
     .job {
-        width: 450px;
+        line-height: 28px;
+        max-width: 350px;
     }
 }
 
@@ -49,10 +70,17 @@
     .hello {
         font-size: 60px;
         line-height: 60px;
+        margin-bottom: 30px;
     }
 
     .iAm {
         font-size: 40px;
+    }
+
+    .job {
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 480px;
     }
 }
 

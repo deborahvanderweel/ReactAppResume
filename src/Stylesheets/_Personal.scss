@@ -1,67 +1,413 @@
-.personalDiv {
+.personalList {
     margin-top: auto;
     background-color: white;
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: black;
-    padding: 25px 25px 10px 25px;
+    padding: 25px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
 
-    #container {
-        box-shadow: 0 1px 4px -1px grey;
-        background: white;
-        border-radius: 5px;
-        overflow: hidden;
-        height: 450px;
-        width: 300px;
+    .personalTitle {
+        font-family: 'Inter-Bold';
+    }
+
+    .cards {
+        width: 100%;
+        float: none;
+        height: 90%;
+        padding-left: 25px;
+        margin: 0 0.25%;
         display: flex;
-        flex-direction: column-reverse;
+        zoom: 1;
+        overflow-y: hidden;
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        .personalDiv {
+            #container {
+                box-shadow: 0 1px 4px -1px grey;
+                background: white;
+                border-radius: 5px;
+                overflow: hidden;
+                height: 450px;
+                width: 300px;
+                display: flex;
+                margin-right: 20px;
+                flex-direction: column-reverse;
 
-        .productDetails {
-            position: relative;
-            text-align: left;
-            overflow: hidden;
-            padding: 20px;
-            width: 100%;
-            height: 270px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
 
-            .bigTitle {
-                font-family: 'Montserrat-Bold';
-                font-size: 20px;
-                text-transform: uppercase;
+                .productDetails {
+                    position: relative;
+                    text-align: left;
+                    overflow: hidden;
+                    padding: 20px;
+                    width: 100%;
+                    height: 330px;
+
+                    .instagramUrl {
+                        display: flex;
+                        text-decoration: none;
+                        color: black;
+                        font-family: 'Inter-Bold';
+                    }
+
+                    .instagramIcon {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 4px;
+                        align-items: flex-end;
+                    }
+
+                    .bigTitle {
+                        font-family: 'Inter-Bold';
+                        // font-size: 20px;
+                        text-transform: uppercase;
+                    }
+
+                    .toyInfo {
+                        margin-bottom: 10px;
+                        // font-size: 15px;
+                        line-height: 19px;
+                    }
+
+                    .default {
+                        border: 2px solid #1d1d1f;
+                        transition: all 350ms ease-in-out;
+                        background: rgba(0, 0, 0, 0);
+                        color: #1d1d1f;
+                        font-size: 14px;
+                        line-height: 1.23536;
+                        display: inline-block;
+                        font-weight: 600;
+                        letter-spacing: -.022em;
+                        font-family: 'Inter-Regular';
+                        max-width: 150px;
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        border-radius: 22px;
+                        margin-top: 20px
+                    }
+                }
+
+                .productImage {
+                    transition: all 0.3s ease-out;
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 400px;
+                }
             }
-        }
-
-        .productImage {
-            transition: all 0.3s ease-out;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 400px;
-            background-image: url('../Images/funkoPops.jpeg');
-            background-size: 500px;
-            background-repeat: no-repeat;
-            background-position: left;
         }
     }
 }
 
 // mobile device
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .personalList {
+        .personalTitle {
+            font-size: 20px;
+            padding: 20px 20px 20px 0px;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        .cards {
+            width: 100%;
+            height: 470px;
+            float: none;
+            margin: 0 0.25%;
+            display: flex;
+            zoom: 1;
+            overflow-y: hidden;
+
+            .personalDiv {
+                #container {
+                    box-shadow: 0 1px 4px -1px grey;
+                    background: white;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    height: 450px;
+                    width: 300px;
+                    display: flex;
+                    margin-right: 20px;
+                    flex-direction: column-reverse;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .productDetails {
+                        position: relative;
+                        text-align: left;
+                        overflow: hidden;
+                        padding: 20px;
+                        width: 100%;
+                        height: 330px;
+
+                        .instagramUrl {
+                            display: flex;
+                            text-decoration: none;
+                            color: black;
+                            font-family: 'Inter-Bold';
+                        }
+
+                        .instagramIcon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 4px;
+                            align-items: flex-end;
+                        }
+
+                        .bigTitle {
+                            font-family: 'Inter-Bold';
+                            // font-size: 20px;
+                            text-transform: uppercase;
+                        }
+
+                        .toyInfo {
+                            margin-bottom: 10px;
+                            // font-size: 15px;
+                            line-height: 19px;
+                        }
+
+                        .default {
+                            border: 2px solid #1d1d1f;
+                            transition: all 350ms ease-in-out;
+                            background: rgba(0, 0, 0, 0);
+                            color: #1d1d1f;
+                            font-size: 14px;
+                            line-height: 1.23536;
+                            display: inline-block;
+                            font-weight: 600;
+                            letter-spacing: -.022em;
+                            font-family: 'Inter-Regular';
+                            max-width: 150px;
+                            padding-left: 22px;
+                            padding-right: 22px;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            border-radius: 22px;
+                            margin-top: 20px
+                        }
+                    }
+
+                    .productImage {
+                        transition: all 0.3s ease-out;
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // tablet device
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .personalList {
+        .personalTitle {
+            font-size: 30px;
+            padding: 50px 50px 40px 50px;
+            font-family: 'Inter-Bold';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        .cards {
+            .personalDiv {
+                #container {
+                    box-shadow: 0 1px 4px -1px grey;
+                    background: white;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    height: 450px;
+                    width: 300px;
+                    display: flex;
+                    margin-right: 20px;
+                    flex-direction: column-reverse;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .productDetails {
+                        position: relative;
+                        text-align: left;
+                        overflow: hidden;
+                        padding: 20px;
+                        width: 100%;
+                        height: 330px;
+
+                        .instagramUrl {
+                            display: flex;
+                            text-decoration: none;
+                            color: black;
+                            font-family: 'Inter-Bold';
+                        }
+
+                        .instagramIcon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 4px;
+                            align-items: flex-end;
+                        }
+
+                        .bigTitle {
+                            font-family: 'Inter-Bold';
+                            font-size: 22px;
+                            text-transform: uppercase;
+                        }
+
+                        .toyInfo {
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // laptop device
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .personalList {
+        margin-top: auto;
+        background-color: white;
+        height: 100vh;
+        scroll-snap-align: start;
+        color: black;
+        padding: 25px 25px 10px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        .personalTitle {
+            font-size: 60px;
+            padding: 30px 50px 40px 50px;
+            font-family: 'Gilroy-ExtraBold';
+            display: flex;
+            align-items: flex-end;
+
+            span {
+                margin-left: 20px;
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            float: none;
+            height: 90%;
+            margin: 0 0.25%;
+            display: flex;
+            zoom: 1;
+            overflow-y: hidden;
+
+            .personalDiv {
+                #container {
+                    box-shadow: 0 1px 4px -1px grey;
+                    background: white;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    height: 450px;
+                    width: 300px;
+                    display: flex;
+                    margin-right: 20px;
+                    flex-direction: column-reverse;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .productDetails {
+                        position: relative;
+                        text-align: left;
+                        overflow: hidden;
+                        padding: 20px;
+                        width: 100%;
+                        height: 330px;
+
+                        .instagramUrl {
+                            display: flex;
+                            text-decoration: none;
+                            color: black;
+                            font-family: 'Inter-Bold';
+                        }
+
+                        .instagramIcon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 4px;
+                            align-items: flex-end;
+                        }
+
+                        .bigTitle {
+                            font-family: 'Inter-Bold';
+                            font-size: 20px;
+                            text-transform: uppercase;
+                        }
+
+                        .toyInfo {
+                            margin-bottom: 10px;
+                            font-size: 15px;
+                            line-height: 19px;
+                        }
+
+                        .default {
+                            border: 2px solid #1d1d1f;
+                            transition: all 350ms ease-in-out;
+                            background: rgba(0, 0, 0, 0);
+                            color: #1d1d1f;
+                            font-size: 14px;
+                            line-height: 1.23536;
+                            display: inline-block;
+                            font-weight: 600;
+                            letter-spacing: -.022em;
+                            font-family: 'Inter-Regular';
+                            max-width: 150px;
+                            padding-left: 22px;
+                            padding-right: 22px;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            border-radius: 22px;
+                            margin-top: 20px
+                        }
+                    }
+
+                    .productImage {
+                        transition: all 0.3s ease-out;
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // desktop device
 @media (min-width: 1200px) {}

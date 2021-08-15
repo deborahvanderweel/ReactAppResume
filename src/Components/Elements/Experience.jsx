@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
+import { languages } from '../Data/Languages';
 
 export default class Experience extends Component {
     render() {
@@ -16,11 +16,6 @@ export default class Experience extends Component {
                     <div className="experienceSkills">
                         <p>{work.information}</p>
                     </div>
-                </div>
-                <div className='experienceLanguages'>
-                    {work.languages.map(language => (
-                        <div className={language.color}>{language.languageName}</div>
-                    ))}
                 </div>
             </div>
         );

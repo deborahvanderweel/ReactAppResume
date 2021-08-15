@@ -8,8 +8,10 @@
     padding-bottom: 10px;
 
     .experienceTitle {
-        font-family: 'Montserrat-Bold';
-        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Gilroy-ExtraBold';
+        display: flex;
+        align-items: flex-end;
     }
 
     .experience {
@@ -29,16 +31,14 @@
             }
 
             .jobTitle {
-                font-family: 'Montserrat-Regular';
-                font-size: 24px;
+                font-family: 'Inter-SemiBold';
+                font-size: 22px;
             }
 
             .companyName {
-                color: black;
-                font-size: 22px;
-                text-transform: uppercase;
+                color: #0066ff;
                 text-decoration: none;
-                font-family: 'Montserrat-Bold';
+                font-family: 'Inter-Bold';
             }
         }
 
@@ -99,6 +99,10 @@
         .experienceTitle {
             font-size: 20px;
             padding: 20px 20px 0px 20px;
+
+            span {
+                margin-left: 10px;
+            }
         }
 
         .experience {
@@ -169,10 +173,14 @@
         .experienceTitle {
             font-size: 30px;
             padding: 50px 50px 0px 50px;
+
+            span {
+                margin-left: 12px;
+            }
         }
 
         .experience {
-            padding: 50px 20px 10px 20px;
+            padding: 0px 20px 0px 20px;
         }
 
         .experienceInfo {
@@ -205,8 +213,13 @@
 
         .experienceLanguages {
             display: flex;
+            justify-content: center;
             flex-flow: wrap;
-            max-width: 768px;
+            margin-left: auto;
+            max-width: 500px;
+            margin-right: auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
 
             .default {
                 font-size: 13px;
@@ -231,46 +244,57 @@
 @media (min-width: 1024px) {
     .experienceList {
         .experienceTitle {
-            font-size: 30px;
+            font-size: 60px;
             padding: 50px 50px 0px 50px;
+
+            span {
+                margin-left: 18px;
+            }
         }
 
         .experience {
-            padding: 40px 20px 0px 20px;
+            padding: 0px 20px 0px 20px;
         }
 
         .experienceInfo {
             max-width: 1024px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
 
             .experienceCompany {
-                min-width: 370px;
-                margin-right: 80px;
+                min-width: 270px;
+                margin-right: 40px;
+                line-height: 32px;
 
                 .workYears {
-                    font-size: 16px;
+                    font-size: 18px;
+                    margin-top: 0;
                 }
 
                 .jobTitle {
-                    font-size: 18px;
+                    font-size: 20px;
                     max-width: 320px;
+                    line-height: 26px;
                 }
 
                 .city {
                     font-size: 16px;
                 }
+
+                .companyName {
+                    font-size: 20px;
+                }
             }
 
             .experienceSkills {
-                max-width: 500px;
+                max-width: 580px;
                 font-size: 18px;
+                font-family: 'Inter-Regular';
+                line-height: 28px;
             }
         }
 
         .experienceLanguages {
-            display: flex;
-            flex-flow: wrap;
-            max-width: 768px;
+            margin-bottom: 48px;
 
             .default {
                 font-size: 12px;
@@ -285,7 +309,7 @@
                 padding-top: 5px;
                 padding-bottom: 5px;
                 border-radius: 22px;
-                margin-bottom: 5px;
+                margin-right: 5px;
             }
         }
     }
