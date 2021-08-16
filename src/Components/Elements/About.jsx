@@ -22,9 +22,9 @@ export default class About extends Component {
                             </div>
                             <a target="_blank" rel="noopener noreferrer" href="mailto:deborah.vanderweel@gmail.com"><button className="sayHi">&#128140; Say hi!</button></a>
                             <div class="contactIcons">
-                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://github.com/deborahvanderweel"><img src={github}></img></a>
-                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://www.linkedin.com/in/deborahvanderweel/"><img src={linkedIn}></img></a>
-                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://open.spotify.com/user/deborah.vanderweel"><img src={spotify}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://github.com/deborahvanderweel"><img alt="github" src={github}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://www.linkedin.com/in/deborahvanderweel/"><img alt="linkedin" src={linkedIn}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://open.spotify.com/user/deborah.vanderweel"><img alt="spotify" src={spotify}></img></a>
                             </div>
                         </div>
                     );
