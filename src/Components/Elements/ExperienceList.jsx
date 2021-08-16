@@ -13,7 +13,7 @@ export default class ExperienceList extends Component {
                     {languages.map(language => <Language {...language} />)}
                 </div>
                 {workList.map(work => <Experience {...work} />)}
-                <p className="bottomTitle">scroll for more about me</p>
+                {/* <p className="bottomTitle">scroll for more about me</p> */}
             </div>
         );
     }

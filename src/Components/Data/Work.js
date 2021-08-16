@@ -1,8 +1,8 @@
 export const workList = [{
-        jobTitle: "Digital developer",
+        jobTitle: "Frontend developer",
         companyName: "@Coolblue",
         years: "May 2019 - present",
-        information: "I'm currently working as a Digital Developer at Coolblue. I'm working at the sales department and responsible for creating banner ads.",
+        information: "Working with sales, responsible for creating banner ads using Vanilla Javascript and React.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.coolblue.nl",
         languages: [{
@@ -46,17 +46,17 @@ export const workList = [{
     {
         jobTitle: "Frontend developer",
         companyName: "@Connect Holland",
-        years: "2018 - 2019",
-        information: "I've worked as a Frontend Developer at Connect Holland. I was responsible for creating full responsive websites for different clients.",
+        years: "July 2018 - Apr 2019",
+        information: "Creating full responsive websites for different clients using Angular.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.connectholland.nl",
         languages: [{}]
     },
     {
-        jobTitle: "Internschip Frontend development & UX design",
+        jobTitle: "Frontend development & UX design intern",
         companyName: "@Connect Holland",
-        years: "5 months - 2016",
-        information: "I was an intern at Connect Holland for 5 months and working on my thesis. I designed and developed an interactive dashboard for customers to use at the entrance of the office.",
+        years: "Aug 2016 - Dec 2016",
+        information: "Designed and developed an interactive dashboard for customers to use at the entrance of the office using Vue.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.connectholland.nl",
         languages: [{}]

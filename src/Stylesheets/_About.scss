@@ -21,6 +21,34 @@
     .name {
         font-family: 'Gilroy-ExtraBold';
     }
+
+    .sayHi {
+        padding: 8px 24px 8px 24px;
+        margin-top: 32px;
+        color: white;
+        background-color: #0066FF;
+        box-shadow: 0px 4px 8px rgba(0, 102, 255, 0.35);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: 'Inter-SemiBold';
+    }
+
+    .contactIcons {
+        margin-top: 32px;
+
+        .contactIcon {
+            margin-right: 16px;
+            opacity: 25%;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 100%;
+                transition: 0.3s;
+            }
+        }
+    }
 }
 
 // mobile device

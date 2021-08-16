@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { profile } from '../Data/Profile';
-import { Link } from 'react-scroll'
-
+import github from '../../Images/github.svg';
+import linkedIn from '../../Images/linkedin.svg';
+import spotify from '../../Images/spotify.svg';
 
 export default class About extends Component {
 
@@ -19,6 +20,12 @@ export default class About extends Component {
                                 {data.prev}
                                 <a href={data.jobUrl2} style={{ color: '#0066ff' }}>{data.job2}</a>
                                 {data.school}<a href={data.universityUrl} style={{ color: '#0066ff' }}>{data.university}</a>.
+                            </div>
+                            <a href="https://github.com/deborahvanderweel"><button className="sayHi">&#128140; Say hi!</button></a>
+                            <div class="contactIcons">
+                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={github}></img></a>
+                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={linkedIn}></img></a>
+                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={spotify}></img></a>
                             </div>
                         </div>
                     );

@@ -80,6 +80,37 @@ code {
   font-family: 'Gilroy-ExtraBold';
 }
 
+.aboutMe .sayHi {
+  padding: 8px 24px 8px 24px;
+  margin-top: 32px;
+  color: white;
+  background-color: #0066FF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 102, 255, 0.35);
+          box-shadow: 0px 4px 8px rgba(0, 102, 255, 0.35);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Inter-SemiBold';
+}
+
+.aboutMe .contactIcons {
+  margin-top: 32px;
+}
+
+.aboutMe .contactIcons .contactIcon {
+  margin-right: 16px;
+  opacity: 25%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.aboutMe .contactIcons .contactIcon:hover {
+  opacity: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @media (max-width: 768px) {
   .hello {
     font-size: 40px;
@@ -133,7 +164,6 @@ code {
 .experienceList {
   background-color: white;
   height: 100%;
-  scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,12 +203,11 @@ code {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .experienceList .experienceInfo .experienceCompany .workYears {
   font-size: 16px;
-  margin-top: 10px;
 }
 
 .experienceList .experienceInfo .experienceCompany .jobTitle {
@@ -210,17 +239,17 @@ code {
   transition: all 350ms ease-in-out;
   background: rgba(0, 0, 0, 0);
   color: #1d1d1f;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.23536;
   display: inline-block;
   font-weight: 600;
   letter-spacing: -.022em;
-  font-family: "Menlo";
+  font-family: 'Gilroy-ExtraBold';
   max-width: 150px;
   padding-left: 22px;
   padding-right: 22px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-radius: 22px;
 }
 
@@ -251,7 +280,7 @@ code {
             justify-content: center;
   }
   .experienceList .experienceTitle {
-    font-size: 20px;
+    font-size: 40px;
     padding: 20px 20px 0px 20px;
   }
   .experienceList .experienceTitle span {
@@ -262,28 +291,35 @@ code {
   }
   .experienceList .experienceInfo {
     max-width: 768px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .experienceList .experienceInfo .experienceCompany {
     min-width: 150px;
     max-width: 250px;
     margin-right: 20px;
+    font-size: 14px;
   }
   .experienceList .experienceInfo .experienceCompany .workYears {
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Inter-Regular';
+    color: #333;
   }
   .experienceList .experienceInfo .experienceCompany .jobTitle {
-    font-size: 13px;
-  }
-  .experienceList .experienceInfo .experienceCompany .city {
-    font-size: 11px;
+    font-size: 16px;
   }
   .experienceList .experienceInfo .experienceCompany .companyName {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 32px;
   }
   .experienceList .experienceInfo .experienceSkills {
     max-width: 450px;
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 28px;
   }
   .experienceList .experienceLanguages {
     display: -webkit-box;
@@ -292,29 +328,33 @@ code {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     max-width: 768px;
+    margin-left: 20px;
+    padding: 20px 0;
   }
   .experienceList .experienceLanguages .default {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.23536;
     display: inline-block;
     font-weight: 600;
     letter-spacing: -.022em;
-    font-family: "Menlo";
     max-width: 150px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 22px;
-    margin-bottom: 5px;
+    margin-right: 4px;
+    margin-top: 4px;
   }
 }
 
 @media (min-width: 650px) {
   .experienceList {
+    padding: 0 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    scroll-snap-align: start;
   }
   .experienceList .experienceTitle {
     font-size: 30px;
@@ -344,10 +384,6 @@ code {
   .experienceList .experienceInfo .experienceCompany .city {
     font-size: 18px;
   }
-  .experienceList .experienceInfo .experienceSkills {
-    max-width: 450px;
-    font-size: 18px;
-  }
   .experienceList .experienceLanguages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -363,24 +399,12 @@ code {
     margin-bottom: 30px;
     margin-top: 30px;
   }
-  .experienceList .experienceLanguages .default {
-    font-size: 13px;
-    line-height: 1.23536;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: -.022em;
-    font-family: "Menlo";
-    max-width: 150px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 22px;
-    margin-bottom: 5px;
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
+  .experienceList {
+    scroll-snap-align: start;
+  }
   .experienceList .experienceTitle {
     font-size: 60px;
     padding: 50px 50px 0px 50px;
@@ -419,25 +443,27 @@ code {
     max-width: 580px;
     font-size: 18px;
     font-family: 'Inter-Regular';
-    line-height: 28px;
+    line-height: 26px;
   }
   .experienceList .experienceLanguages {
     margin-bottom: 48px;
+    max-width: 520px;
   }
   .experienceList .experienceLanguages .default {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.23536;
     display: inline-block;
     font-weight: 600;
     letter-spacing: -.022em;
-    font-family: "Menlo";
+    font-family: 'Gilroy-ExtraBold';
     max-width: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 22px;
-    margin-right: 5px;
+    margin-right: 12px;
   }
 }
 
@@ -447,7 +473,6 @@ code {
   height: 100vh;
   scroll-snap-align: start;
   color: black;
-  padding: 25px 0px 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +483,7 @@ code {
 }
 
 .personalList .personalTitle {
-  font-family: 'Inter-Bold';
+  font-family: 'Gilroy-ExtraBold';
 }
 
 .personalList .cards {
@@ -474,14 +499,17 @@ code {
   overflow-y: hidden;
 }
 
-.personalList .cards .personalDiv #container {
-  -webkit-box-shadow: 0 1px 4px -1px grey;
-          box-shadow: 0 1px 4px -1px grey;
-  background: white;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 450px;
+.personalList .cards .personalDiv img {
+  height: 250px;
   width: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+}
+
+.personalList .cards .personalDiv #container {
+  background: white;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,11 +518,6 @@ code {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-}
-
-.personalList .cards .personalDiv #container img {
-  width: 100%;
-  height: 100%;
 }
 
 .personalList .cards .personalDiv #container .productDetails {
@@ -511,7 +534,8 @@ code {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  color: black;
+  color: #0066FF;
+  font-size: 20px;
   font-family: 'Inter-Bold';
 }
 
@@ -526,12 +550,6 @@ code {
 
 .personalList .cards .personalDiv #container .productDetails .bigTitle {
   font-family: 'Inter-Bold';
-  text-transform: uppercase;
-}
-
-.personalList .cards .personalDiv #container .productDetails .toyInfo {
-  margin-bottom: 10px;
-  line-height: 19px;
 }
 
 .personalList .cards .personalDiv #container .productDetails .default {
@@ -566,15 +584,15 @@ code {
 
 @media (max-width: 768px) {
   .personalList .personalTitle {
-    font-size: 20px;
-    padding: 20px 20px 20px 0px;
+    font-size: 40px;
+    padding: 20px 20px 20px 30px;
   }
   .personalList .personalTitle span {
     margin-left: 5px;
   }
   .personalList .cards {
     width: 100%;
-    height: 470px;
+    height: 490px;
     float: none;
     margin: 0 0.25%;
     display: -webkit-box;
@@ -584,25 +602,19 @@ code {
     overflow-y: hidden;
   }
   .personalList .cards .personalDiv #container {
-    -webkit-box-shadow: 0 1px 4px -1px grey;
-            box-shadow: 0 1px 4px -1px grey;
     background: white;
     border-radius: 5px;
     overflow: hidden;
-    height: 450px;
+    height: 250px;
     width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 20px;
+    margin-right: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .personalList .cards .personalDiv #container img {
-    width: 100%;
-    height: 100%;
   }
   .personalList .cards .personalDiv #container .productDetails {
     position: relative;
@@ -613,48 +625,16 @@ code {
     height: 330px;
   }
   .personalList .cards .personalDiv #container .productDetails .instagramUrl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-decoration: none;
-    color: black;
-    font-family: 'Inter-Bold';
-  }
-  .personalList .cards .personalDiv #container .productDetails .instagramIcon {
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    font-size: 16px;
+    line-height: 28px;
   }
   .personalList .cards .personalDiv #container .productDetails .bigTitle {
-    font-family: 'Inter-Bold';
-    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
   }
   .personalList .cards .personalDiv #container .productDetails .toyInfo {
-    margin-bottom: 10px;
-    line-height: 19px;
-  }
-  .personalList .cards .personalDiv #container .productDetails .default {
-    border: 2px solid #1d1d1f;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-    background: rgba(0, 0, 0, 0);
-    color: #1d1d1f;
-    font-size: 14px;
-    line-height: 1.23536;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: -.022em;
-    font-family: 'Inter-Regular';
-    max-width: 150px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 22px;
-    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
   }
   .personalList .cards .personalDiv #container .productImage {
     -webkit-transition: all 0.3s ease-out;
@@ -668,9 +648,8 @@ code {
 
 @media (min-width: 768px) {
   .personalList .personalTitle {
-    font-size: 30px;
+    font-size: 60px;
     padding: 50px 50px 40px 50px;
-    font-family: 'Inter-Bold';
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -685,12 +664,10 @@ code {
     margin-left: 10px;
   }
   .personalList .cards .personalDiv #container {
-    -webkit-box-shadow: 0 1px 4px -1px grey;
-            box-shadow: 0 1px 4px -1px grey;
     background: white;
     border-radius: 5px;
     overflow: hidden;
-    height: 450px;
+    height: 340px;
     width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -718,7 +695,6 @@ code {
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
-    color: black;
     font-family: 'Inter-Bold';
   }
   .personalList .cards .personalDiv #container .productDetails .instagramIcon {
@@ -731,13 +707,13 @@ code {
   }
   .personalList .cards .personalDiv #container .productDetails .bigTitle {
     font-family: 'Inter-Bold';
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 32px;
   }
   .personalList .cards .personalDiv #container .productDetails .toyInfo {
     margin-bottom: 10px;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 28px;
   }
 }
 
@@ -762,8 +738,7 @@ code {
   }
   .personalList .personalTitle {
     font-size: 60px;
-    padding: 30px 50px 40px 50px;
-    font-family: 'Gilroy-ExtraBold';
+    padding: 30px 50px 30px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -789,13 +764,19 @@ code {
     zoom: 1;
     overflow-y: hidden;
   }
+  .personalList .cards .personalDiv img {
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  }
   .personalList .cards .personalDiv #container {
-    -webkit-box-shadow: 0 1px 4px -1px grey;
-            box-shadow: 0 1px 4px -1px grey;
+    margin-top: 0;
     background: white;
     border-radius: 5px;
     overflow: hidden;
-    height: 450px;
+    height: 250px;
     width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -805,10 +786,6 @@ code {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .personalList .cards .personalDiv #container img {
-    width: 100%;
-    height: 100%;
   }
   .personalList .cards .personalDiv #container .productDetails {
     position: relative;
@@ -823,7 +800,6 @@ code {
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
-    color: black;
     font-family: 'Inter-Bold';
   }
   .personalList .cards .personalDiv #container .productDetails .instagramIcon {
@@ -837,12 +813,11 @@ code {
   .personalList .cards .personalDiv #container .productDetails .bigTitle {
     font-family: 'Inter-Bold';
     font-size: 20px;
-    text-transform: uppercase;
   }
   .personalList .cards .personalDiv #container .productDetails .toyInfo {
     margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 28px;
   }
   .personalList .cards .personalDiv #container .productDetails .default {
     border: 2px solid #1d1d1f;
@@ -883,14 +858,9 @@ code {
 
 .App {
   height: 100vh;
-  overflow: auto;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  font-family: 'Inter-Regular';
 }
 
 .App .bottomTitle {
-  color: black;
   text-transform: uppercase;
   font-size: 12px;
   font-family: 'Inter-Light';
@@ -904,12 +874,20 @@ code {
 
 @media (max-width: 768px) {
   .bottomTitle {
-    margin-bottom: 90px;
+    color: white;
   }
 }
 
 @media (min-width: 768px) {
+  .App {
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    font-family: 'Inter-Regular';
+  }
   .bottomTitle {
+    color: black;
     margin-bottom: 90px;
   }
 }

@@ -5,14 +5,15 @@ export default class Personal extends Component {
         const card = this.props;
         return (
             <div className="personalDiv">
+                <img src={card.image} className="productImage"></img>
                 <div id="container">
                     <div class="productDetails">
+                        <a href={card.url} className="instagramUrl">{card.label}</a>
                         <p className="bigTitle">{card.title}</p>
                         <p className="toyInfo">{card.information}</p>
-                        <a href={card.url} className="instagramUrl"><img className="instagramIcon" src={card.icon}></img> {card.label}</a>
                     </div>
-                    <img src={card.image} className="productImage"></img>
                 </div>
+
             </div >
         )
     }

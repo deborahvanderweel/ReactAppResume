@@ -1,7 +1,6 @@
 .experienceList {
     background-color: white;
     height: 100%;
-    scroll-snap-align: start;
     display: flex;
     color: black;
     flex-direction: column;
@@ -22,12 +21,11 @@
     .experienceInfo {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 25px;
+        margin-bottom: 26px;
 
         .experienceCompany {
             .workYears {
                 font-size: 16px;
-                margin-top: 10px;
             }
 
             .jobTitle {
@@ -55,17 +53,17 @@
             transition: all 350ms ease-in-out;
             background: rgba(0, 0, 0, 0);
             color: #1d1d1f;
-            font-size: 17px;
+            font-size: 16px;
             line-height: 1.23536;
             display: inline-block;
             font-weight: 600;
             letter-spacing: -.022em;
-            font-family: "Menlo";
+            font-family: 'Gilroy-ExtraBold';
             max-width: 150px;
             padding-left: 22px;
             padding-right: 22px;
-            padding-top: 7px;
-            padding-bottom: 7px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             border-radius: 22px;
         }
 
@@ -97,7 +95,7 @@
         justify-content: center;
 
         .experienceTitle {
-            font-size: 20px;
+            font-size: 40px;
             padding: 20px 20px 0px 20px;
 
             span {
@@ -111,33 +109,36 @@
 
         .experienceInfo {
             max-width: 768px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            flex-direction: column;
 
             .experienceCompany {
                 min-width: 150px;
                 max-width: 250px;
                 margin-right: 20px;
+                font-size: 14px;
 
                 .workYears {
-                    font-size: 13px;
+                    font-size: 14px;
+                    line-height: 32px;
+                    font-family: 'Inter-Regular';
+                    color: #333;
                 }
 
                 .jobTitle {
-                    font-size: 13px;
-                }
-
-                .city {
-                    font-size: 11px;
+                    font-size: 16px;
                 }
 
                 .companyName {
-                    font-size: 14px;
+                    font-size: 16px;
+                    line-height: 32px;
                 }
             }
 
             .experienceSkills {
                 max-width: 450px;
-                font-size: 13px;
+                font-size: 16px;
+                line-height: 28px;
             }
         }
 
@@ -145,21 +146,23 @@
             display: flex;
             flex-flow: wrap;
             max-width: 768px;
+            margin-left: 20px;
+            padding: 20px 0;
 
             .default {
-                font-size: 10px;
+                font-size: 14px;
                 line-height: 1.23536;
                 display: inline-block;
                 font-weight: 600;
                 letter-spacing: -.022em;
-                font-family: "Menlo";
                 max-width: 150px;
-                padding-left: 16px;
-                padding-right: 16px;
+                padding-left: 8px;
+                padding-right: 8px;
                 padding-top: 4px;
                 padding-bottom: 4px;
                 border-radius: 22px;
-                margin-bottom: 5px;
+                margin-right: 4px;
+                margin-top: 4px;
             }
         }
     }
@@ -168,7 +171,9 @@
 // tablet device
 @media (min-width: 650px) {
     .experienceList {
+        padding: 0 30px;
         align-items: center;
+        scroll-snap-align: start;
 
         .experienceTitle {
             font-size: 30px;
@@ -204,11 +209,6 @@
                     font-size: 18px;
                 }
             }
-
-            .experienceSkills {
-                max-width: 450px;
-                font-size: 18px;
-            }
         }
 
         .experienceLanguages {
@@ -220,29 +220,15 @@
             margin-right: auto;
             margin-bottom: 30px;
             margin-top: 30px;
-
-            .default {
-                font-size: 13px;
-                line-height: 1.23536;
-                display: inline-block;
-                font-weight: 600;
-                letter-spacing: -.022em;
-                font-family: "Menlo";
-                max-width: 150px;
-                padding-left: 22px;
-                padding-right: 22px;
-                padding-top: 7px;
-                padding-bottom: 7px;
-                border-radius: 22px;
-                margin-bottom: 5px;
-            }
         }
     }
 }
 
 // laptop device
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
     .experienceList {
+        scroll-snap-align: start;
+
         .experienceTitle {
             font-size: 60px;
             padding: 50px 50px 0px 50px;
@@ -289,27 +275,29 @@
                 max-width: 580px;
                 font-size: 18px;
                 font-family: 'Inter-Regular';
-                line-height: 28px;
+                line-height: 26px;
             }
         }
 
         .experienceLanguages {
             margin-bottom: 48px;
+            max-width: 520px;
 
             .default {
-                font-size: 12px;
+                font-size: 16px;
                 line-height: 1.23536;
                 display: inline-block;
                 font-weight: 600;
                 letter-spacing: -.022em;
-                font-family: "Menlo";
+                font-family: 'Gilroy-ExtraBold';
                 max-width: 150px;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                margin-bottom: 6px;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 6px;
+                padding-bottom: 6px;
                 border-radius: 22px;
-                margin-right: 5px;
+                margin-right: 12px;
             }
         }
     }
