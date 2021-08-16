@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { cards } from '../Data/Cards';
 import Personal from './Personal'

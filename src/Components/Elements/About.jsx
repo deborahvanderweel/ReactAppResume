@@ -5,7 +5,6 @@ import linkedIn from '../../Images/linkedin.svg';
 import spotify from '../../Images/spotify.svg';
 
 export default class About extends Component {
-
     render() {
         return (
             <div className="aboutMe">

@@ -42,10 +42,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
 .aboutMe {
   margin-top: auto;
   background-color: white;
@@ -65,7 +61,7 @@ code {
       -ms-flex-direction: column;
           flex-direction: column;
   color: black;
-  padding: 25px 25px 10px 25px;
+  padding: 24px 24px 8px 24px;
 }
 
 .aboutMe .job {
@@ -172,7 +168,7 @@ code {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .experienceList .experienceTitle {
@@ -203,7 +199,7 @@ code {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .experienceList .experienceInfo .experienceCompany .workYears {
@@ -291,7 +287,7 @@ code {
   }
   .experienceList .experienceInfo {
     max-width: 768px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -299,14 +295,13 @@ code {
   }
   .experienceList .experienceInfo .experienceCompany {
     min-width: 150px;
-    max-width: 250px;
+    max-width: 240px;
     margin-right: 20px;
     font-size: 14px;
   }
   .experienceList .experienceInfo .experienceCompany .workYears {
     font-size: 14px;
     line-height: 32px;
-    font-family: 'Inter-Regular';
     color: #333;
   }
   .experienceList .experienceInfo .experienceCompany .jobTitle {
@@ -333,10 +328,6 @@ code {
   }
   .experienceList .experienceLanguages .default {
     font-size: 14px;
-    line-height: 1.23536;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: -.022em;
     max-width: 150px;
     padding-left: 8px;
     padding-right: 8px;
@@ -368,7 +359,7 @@ code {
   }
   .experienceList .experienceInfo {
     max-width: 768px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
   .experienceList .experienceInfo .experienceCompany {
     min-width: 250px;
@@ -382,7 +373,7 @@ code {
     font-size: 20px;
   }
   .experienceList .experienceInfo .experienceCompany .city {
-    font-size: 18px;
+    font-size: 16px;
   }
   .experienceList .experienceLanguages {
     display: -webkit-box;
@@ -410,14 +401,14 @@ code {
     padding: 50px 50px 0px 50px;
   }
   .experienceList .experienceTitle span {
-    margin-left: 18px;
+    margin-left: 16px;
   }
   .experienceList .experience {
     padding: 0px 20px 0px 20px;
   }
   .experienceList .experienceInfo {
     max-width: 1024px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .experienceList .experienceInfo .experienceCompany {
     min-width: 270px;
@@ -442,7 +433,6 @@ code {
   .experienceList .experienceInfo .experienceSkills {
     max-width: 580px;
     font-size: 18px;
-    font-family: 'Inter-Regular';
     line-height: 26px;
   }
   .experienceList .experienceLanguages {
@@ -451,17 +441,12 @@ code {
   }
   .experienceList .experienceLanguages .default {
     font-size: 16px;
-    line-height: 1.23536;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: -.022em;
-    font-family: 'Gilroy-ExtraBold';
     max-width: 150px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 22px;
     margin-right: 12px;
   }
@@ -574,8 +559,6 @@ code {
 }
 
 .personalList .cards .personalDiv #container .productImage {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -637,8 +620,6 @@ code {
     line-height: 28px;
   }
   .personalList .cards .personalDiv #container .productImage {
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -695,7 +676,6 @@ code {
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
-    font-family: 'Inter-Bold';
   }
   .personalList .cards .personalDiv #container .productDetails .instagramIcon {
     width: 20px;
@@ -706,7 +686,6 @@ code {
             align-items: flex-end;
   }
   .personalList .cards .personalDiv #container .productDetails .bigTitle {
-    font-family: 'Inter-Bold';
     font-size: 20px;
     line-height: 32px;
   }
@@ -768,8 +747,6 @@ code {
     height: 250px;
     width: 300px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
   }
   .personalList .cards .personalDiv #container {
     margin-top: 0;
@@ -800,7 +777,6 @@ code {
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
-    font-family: 'Inter-Bold';
   }
   .personalList .cards .personalDiv #container .productDetails .instagramIcon {
     width: 20px;
@@ -811,7 +787,6 @@ code {
             align-items: flex-end;
   }
   .personalList .cards .personalDiv #container .productDetails .bigTitle {
-    font-family: 'Inter-Bold';
     font-size: 20px;
   }
   .personalList .cards .personalDiv #container .productDetails .toyInfo {
@@ -819,29 +794,7 @@ code {
     font-size: 16px;
     line-height: 28px;
   }
-  .personalList .cards .personalDiv #container .productDetails .default {
-    border: 2px solid #1d1d1f;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-    background: rgba(0, 0, 0, 0);
-    color: #1d1d1f;
-    font-size: 14px;
-    line-height: 1.23536;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: -.022em;
-    font-family: 'Inter-Regular';
-    max-width: 150px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 22px;
-    margin-top: 20px;
-  }
   .personalList .cards .personalDiv #container .productImage {
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
     position: relative;
     overflow: hidden;
     width: 100%;

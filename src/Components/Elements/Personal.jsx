@@ -13,7 +13,6 @@ export default class Personal extends Component {
                         <p className="toyInfo">{card.information}</p>
                     </div>
                 </div>
-
             </div >
         )
     }

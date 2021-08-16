@@ -4,7 +4,7 @@
     display: flex;
     color: black;
     flex-direction: column;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
     .experienceTitle {
         font-size: 30px;
@@ -21,7 +21,7 @@
     .experienceInfo {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 26px;
+        margin-bottom: 24px;
 
         .experienceCompany {
             .workYears {
@@ -109,19 +109,18 @@
 
         .experienceInfo {
             max-width: 768px;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
             flex-direction: column;
 
             .experienceCompany {
                 min-width: 150px;
-                max-width: 250px;
+                max-width: 240px;
                 margin-right: 20px;
                 font-size: 14px;
 
                 .workYears {
                     font-size: 14px;
                     line-height: 32px;
-                    font-family: 'Inter-Regular';
                     color: #333;
                 }
 
@@ -151,10 +150,6 @@
 
             .default {
                 font-size: 14px;
-                line-height: 1.23536;
-                display: inline-block;
-                font-weight: 600;
-                letter-spacing: -.022em;
                 max-width: 150px;
                 padding-left: 8px;
                 padding-right: 8px;
@@ -190,7 +185,7 @@
 
         .experienceInfo {
             max-width: 768px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
 
             .experienceCompany {
                 min-width: 250px;
@@ -206,7 +201,7 @@
                 }
 
                 .city {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
             }
         }
@@ -234,7 +229,7 @@
             padding: 50px 50px 0px 50px;
 
             span {
-                margin-left: 18px;
+                margin-left: 16px;
             }
         }
 
@@ -244,7 +239,7 @@
 
         .experienceInfo {
             max-width: 1024px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
 
             .experienceCompany {
                 min-width: 270px;
@@ -274,7 +269,6 @@
             .experienceSkills {
                 max-width: 580px;
                 font-size: 18px;
-                font-family: 'Inter-Regular';
                 line-height: 26px;
             }
         }
@@ -285,26 +279,15 @@
 
             .default {
                 font-size: 16px;
-                line-height: 1.23536;
-                display: inline-block;
-                font-weight: 600;
-                letter-spacing: -.022em;
-                font-family: 'Gilroy-ExtraBold';
                 max-width: 150px;
-                margin-bottom: 6px;
+                margin-bottom: 8px;
                 padding-left: 12px;
                 padding-right: 12px;
-                padding-top: 6px;
-                padding-bottom: 6px;
+                padding-top: 8px;
+                padding-bottom: 8px;
                 border-radius: 22px;
                 margin-right: 12px;
             }
         }
     }
 }
-
-// desktop device
-@media (min-width: 1200px) {}
-
-// bigger devices
-@media (min-width: 1201px) {}
