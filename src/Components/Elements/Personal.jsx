@@ -8,7 +8,7 @@ export default class Personal extends Component {
                 <img src={card.image} className="productImage"></img>
                 <div id="container">
                     <div class="productDetails">
-                        <a href={card.url} className="instagramUrl">{card.label}</a>
+                        <a target="_blank" rel="noopener noreferrer" href={card.url} className="instagramUrl">{card.label}</a>
                         <p className="bigTitle">{card.title}</p>
                         <p className="toyInfo">{card.information}</p>
                     </div>

@@ -16,16 +16,16 @@ export default class About extends Component {
                                 <p className="hello">Hi! &#128075;</p>
                             </div>
                             <div className="job">{data.aboutme}
-                                <a href={data.jobUrl} style={{ color: '#0066ff' }}>{data.job}</a>
+                                <a target="_blank" rel="noopener noreferrer" href={data.jobUrl} style={{ color: '#0066ff' }}>{data.job}</a>
                                 {data.prev}
-                                <a href={data.jobUrl2} style={{ color: '#0066ff' }}>{data.job2}</a>
-                                {data.school}<a href={data.universityUrl} style={{ color: '#0066ff' }}>{data.university}</a>.
+                                <a target="_blank" rel="noopener noreferrer" href={data.jobUrl2} style={{ color: '#0066ff' }}>{data.job2}</a>
+                                {data.school}<a target="_blank" rel="noopener noreferrer" href={data.universityUrl} style={{ color: '#0066ff' }}>{data.university}</a>.
                             </div>
-                            <a href="https://github.com/deborahvanderweel"><button className="sayHi">&#128140; Say hi!</button></a>
+                            <a target="_blank" rel="noopener noreferrer" href="mailto:deborah.vanderweel@gmail.com"><button className="sayHi">&#128140; Say hi!</button></a>
                             <div class="contactIcons">
-                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={github}></img></a>
-                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={linkedIn}></img></a>
-                                <a className="contactIcon" href="https://github.com/deborahvanderweel"><img src={spotify}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://github.com/deborahvanderweel"><img src={github}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://www.linkedin.com/in/deborahvanderweel/"><img src={linkedIn}></img></a>
+                                <a target="_blank" rel="noopener noreferrer" className="contactIcon" href="https://open.spotify.com/user/deborah.vanderweel"><img src={spotify}></img></a>
                             </div>
                         </div>
                     );

@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import { languages } from '../Data/Languages';
 
 export default class Experience extends Component {
     render() {
@@ -9,7 +8,7 @@ export default class Experience extends Component {
             <div className="experience">
                 <div className="experienceInfo">
                     <div className="experienceCompany">
-                        <a href={work.website} className="companyName">{work.companyName}</a>
+                        <a target="_blank" rel="noopener noreferrer" href={work.website} className="companyName">{work.companyName}</a>
                         <p className="jobTitle">{work.jobTitle}</p>
                         <p className="workYears">{work.years}</p>
                     </div>

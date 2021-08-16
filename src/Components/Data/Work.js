@@ -46,8 +46,8 @@ export const workList = [{
     {
         jobTitle: "Frontend developer",
         companyName: "@Connect Holland",
-        years: "July 2018 - Apr 2019",
-        information: "Creating full responsive websites for different clients using Angular.",
+        years: "Feb 2018 - Apr 2019",
+        information: "Creating full responsive websites for different clients using frameworks like Angular.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.connectholland.nl",
         languages: [{}]
