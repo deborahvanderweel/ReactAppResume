@@ -505,7 +505,7 @@ body {
           flex-direction: column-reverse;
 }
 
-.personalList .cards .personalDiv #container .productDetails {
+.personalList .cards .personalDiv #container .personalDetails {
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -514,7 +514,7 @@ body {
   height: 330px;
 }
 
-.personalList .cards .personalDiv #container .productDetails .instagramUrl {
+.personalList .cards .personalDiv #container .personalDetails .instagramUrl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +524,7 @@ body {
   font-family: 'Inter-Bold';
 }
 
-.personalList .cards .personalDiv #container .productDetails .instagramIcon {
+.personalList .cards .personalDiv #container .personalDetails .instagramIcon {
   width: 20px;
   height: 20px;
   margin-right: 4px;
@@ -533,11 +533,11 @@ body {
           align-items: flex-end;
 }
 
-.personalList .cards .personalDiv #container .productDetails .bigTitle {
+.personalList .cards .personalDiv #container .personalDetails .bigTitle {
   font-family: 'Inter-Bold';
 }
 
-.personalList .cards .personalDiv #container .productDetails .default {
+.personalList .cards .personalDiv #container .personalDetails .default {
   border: 2px solid #1d1d1f;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -558,7 +558,7 @@ body {
   margin-top: 20px;
 }
 
-.personalList .cards .personalDiv #container .productImage {
+.personalList .cards .personalDiv #container .personalImage {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -599,7 +599,7 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .personalList .cards .personalDiv #container .productDetails {
+  .personalList .cards .personalDiv #container .personalDetails {
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -607,19 +607,19 @@ body {
     width: 100%;
     height: 330px;
   }
-  .personalList .cards .personalDiv #container .productDetails .instagramUrl {
+  .personalList .cards .personalDiv #container .personalDetails .instagramUrl {
     font-size: 16px;
     line-height: 28px;
   }
-  .personalList .cards .personalDiv #container .productDetails .bigTitle {
+  .personalList .cards .personalDiv #container .personalDetails .bigTitle {
     font-size: 16px;
     line-height: 28px;
   }
-  .personalList .cards .personalDiv #container .productDetails .toyInfo {
+  .personalList .cards .personalDiv #container .personalDetails .toyInfo {
     font-size: 16px;
     line-height: 28px;
   }
-  .personalList .cards .personalDiv #container .productImage {
+  .personalList .cards .personalDiv #container .personalImage {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -663,7 +663,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  .personalList .cards .personalDiv #container .productDetails {
+  .personalList .cards .personalDiv #container .personalDetails {
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -671,13 +671,13 @@ body {
     width: 100%;
     height: 330px;
   }
-  .personalList .cards .personalDiv #container .productDetails .instagramUrl {
+  .personalList .cards .personalDiv #container .personalDetails .instagramUrl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
   }
-  .personalList .cards .personalDiv #container .productDetails .instagramIcon {
+  .personalList .cards .personalDiv #container .personalDetails .instagramIcon {
     width: 20px;
     height: 20px;
     margin-right: 4px;
@@ -685,11 +685,11 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .personalList .cards .personalDiv #container .productDetails .bigTitle {
+  .personalList .cards .personalDiv #container .personalDetails .bigTitle {
     font-size: 20px;
     line-height: 32px;
   }
-  .personalList .cards .personalDiv #container .productDetails .toyInfo {
+  .personalList .cards .personalDiv #container .personalDetails .toyInfo {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 28px;
@@ -764,7 +764,7 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .personalList .cards .personalDiv #container .productDetails {
+  .personalList .cards .personalDiv #container .personalDetails {
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -772,13 +772,13 @@ body {
     width: 100%;
     height: 330px;
   }
-  .personalList .cards .personalDiv #container .productDetails .instagramUrl {
+  .personalList .cards .personalDiv #container .personalDetails .instagramUrl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
   }
-  .personalList .cards .personalDiv #container .productDetails .instagramIcon {
+  .personalList .cards .personalDiv #container .personalDetails .instagramIcon {
     width: 20px;
     height: 20px;
     margin-right: 4px;
@@ -786,15 +786,15 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .personalList .cards .personalDiv #container .productDetails .bigTitle {
+  .personalList .cards .personalDiv #container .personalDetails .bigTitle {
     font-size: 20px;
   }
-  .personalList .cards .personalDiv #container .productDetails .toyInfo {
+  .personalList .cards .personalDiv #container .personalDetails .toyInfo {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 28px;
   }
-  .personalList .cards .personalDiv #container .productImage {
+  .personalList .cards .personalDiv #container .personalImage {
     position: relative;
     overflow: hidden;
     width: 100%;
