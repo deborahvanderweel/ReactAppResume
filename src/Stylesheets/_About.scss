@@ -40,11 +40,11 @@
 
         .contactIcon {
             margin-right: 16px;
-            opacity: 25%;
+            opacity: 0.25;
             transition: 0.3s;
 
             &:hover {
-                opacity: 100%;
+                opacity: 1;
                 transition: 0.3s;
             }
         }

@@ -96,13 +96,13 @@ body {
 
 .aboutMe .contactIcons .contactIcon {
   margin-right: 16px;
-  opacity: 25%;
+  opacity: 0.25;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .aboutMe .contactIcons .contactIcon:hover {
-  opacity: 100%;
+  opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -159,7 +159,6 @@ body {
 
 .experienceList {
   background-color: white;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +237,6 @@ body {
   font-size: 16px;
   line-height: 1.23536;
   display: inline-block;
-  font-weight: 600;
   letter-spacing: -.022em;
   font-family: 'Gilroy-ExtraBold';
   max-width: 150px;
@@ -271,19 +269,21 @@ body {
 
 @media (max-width: 650px) {
   .experienceList {
+    height: 100%;
+    margin-top: 104px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .experienceList .experienceTitle {
-    font-size: 40px;
-    padding: 20px 20px 0px 20px;
+    font-size: 36px;
+    padding: 24px 24px 0px 24px;
   }
   .experienceList .experienceTitle span {
     margin-left: 10px;
   }
   .experienceList .experience {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 24px 10px 24px;
   }
   .experienceList .experienceInfo {
     max-width: 768px;
@@ -323,7 +323,7 @@ body {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     max-width: 768px;
-    margin-left: 20px;
+    margin-left: 24px;
     padding: 20px 0;
   }
   .experienceList .experienceLanguages .default {
@@ -336,6 +336,12 @@ body {
     border-radius: 22px;
     margin-right: 4px;
     margin-top: 4px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+  .experienceList {
+    height: 100%;
   }
 }
 
@@ -703,7 +709,7 @@ body {
     height: 100vh;
     scroll-snap-align: start;
     color: black;
-    padding: 25px 25px 10px 25px;
+    padding: 24 0px 10px 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -826,7 +832,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .bottomTitle {
+  .App {
+    overflow-x: hidden;
+  }
+  .App .bottomTitle {
     color: white;
   }
 }

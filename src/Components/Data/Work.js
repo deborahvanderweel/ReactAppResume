@@ -2,7 +2,7 @@ export const workList = [{
         jobTitle: "Frontend developer",
         companyName: "@Coolblue",
         years: "May 2019 - present",
-        information: "Working with sales, responsible for creating banner ads using Vanilla Javascript and React.",
+        information: "Currently working at the sales department, responsible for creating banner ads using Vanilla JavaScript and React.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.coolblue.nl",
         languages: [{
@@ -14,7 +14,7 @@ export const workList = [{
                 color: "default"
             },
             {
-                languageName: "Javascript",
+                languageName: "JavaScript",
                 color: "default"
             },
             {
@@ -55,8 +55,17 @@ export const workList = [{
     {
         jobTitle: "Frontend development & UX design intern",
         companyName: "@Connect Holland",
-        years: "Aug 2016 - Dec 2016",
+        years: "Feb 2018 - Jun 2018",
         information: "Designed and developed an interactive dashboard for customers to use at the entrance of the office using Vue.",
+        place: "Rotterdam, The Netherlands",
+        website: "https://www.connectholland.nl",
+        languages: [{}]
+    },
+    {
+        jobTitle: "Web development intern",
+        companyName: "@Connect Holland",
+        years: "Aug 2016 - Dec 2016",
+        information: "Focused on both frontend and backend using Symfony, Angular and a headless CMS.",
         place: "Rotterdam, The Netherlands",
         website: "https://www.connectholland.nl",
         languages: [{}]

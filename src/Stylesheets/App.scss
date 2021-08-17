@@ -23,8 +23,12 @@
 }
 
 @media (max-width: 768px) {
-  .bottomTitle {
-    color: white;
+  .App {
+    overflow-x: hidden;
+
+    .bottomTitle {
+      color: white;
+    }
   }
 }
 

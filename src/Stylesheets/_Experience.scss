@@ -1,6 +1,5 @@
 .experienceList {
     background-color: white;
-    height: 100%;
     display: flex;
     color: black;
     flex-direction: column;
@@ -56,7 +55,6 @@
             font-size: 16px;
             line-height: 1.23536;
             display: inline-block;
-            font-weight: 600;
             letter-spacing: -.022em;
             font-family: 'Gilroy-ExtraBold';
             max-width: 150px;
@@ -92,11 +90,13 @@
 // mobile device
 @media (max-width: 650px) {
     .experienceList {
+        height: 100%;
+        margin-top: 104px;
         justify-content: center;
 
         .experienceTitle {
-            font-size: 40px;
-            padding: 20px 20px 0px 20px;
+            font-size: 36px;
+            padding: 24px 24px 0px 24px;
 
             span {
                 margin-left: 10px;
@@ -104,7 +104,7 @@
         }
 
         .experience {
-            padding: 10px 20px 10px 20px;
+            padding: 10px 24px 10px 24px;
         }
 
         .experienceInfo {
@@ -145,7 +145,7 @@
             display: flex;
             flex-flow: wrap;
             max-width: 768px;
-            margin-left: 20px;
+            margin-left: 24px;
             padding: 20px 0;
 
             .default {
@@ -160,6 +160,12 @@
                 margin-top: 4px;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+    .experienceList {
+        height: 100%;
     }
 }
 
