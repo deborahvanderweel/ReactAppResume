@@ -246,8 +246,7 @@ body {
 
 @media (max-width: 650px) {
   .experienceList {
-    height: 100%;
-    margin-top: 104px;
+    margin-bottom: 56px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -515,7 +514,7 @@ body {
 
 @media (max-width: 768px) {
   .personalList .personalTitle {
-    font-size: 40px;
+    font-size: 36px;
     padding: 20px 20px 20px 30px;
   }
   .personalList .personalTitle span {
