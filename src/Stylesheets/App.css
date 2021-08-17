@@ -113,7 +113,7 @@ body {
     line-height: 42px;
   }
   .iAm {
-    font-size: 30px;
+    font-size: 32px;
   }
   .name {
     margin-bottom: 20px;
@@ -130,10 +130,10 @@ body {
     line-height: 68px;
   }
   .iAm {
-    font-size: 30px;
+    font-size: 32px;
   }
   .name {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   .job {
     line-height: 28px;
@@ -145,7 +145,7 @@ body {
   .hello {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   .iAm {
     font-size: 40px;
@@ -240,31 +240,8 @@ body {
   letter-spacing: -.022em;
   font-family: 'Gilroy-ExtraBold';
   max-width: 150px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 22px;
   border-radius: 22px;
-}
-
-.experienceList .experienceLanguages .green {
-  color: green;
-  border: 2px solid green;
-}
-
-.experienceList .experienceLanguages .pink {
-  color: palevioletred;
-  border: 2px solid palevioletred;
-}
-
-.experienceList .experienceLanguages .purple {
-  color: purple;
-  border: 2px solid purple;
-}
-
-.experienceList .experienceLanguages .blue {
-  color: blue;
-  border: 2px solid blue;
 }
 
 @media (max-width: 650px) {
@@ -327,12 +304,10 @@ body {
     padding: 20px 0;
   }
   .experienceList .experienceLanguages .default {
+    padding: 4px 8px;
     font-size: 14px;
     max-width: 150px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 8px;
     border-radius: 22px;
     margin-right: 4px;
     margin-top: 4px;
@@ -448,13 +423,10 @@ body {
   .experienceList .experienceLanguages .default {
     font-size: 16px;
     max-width: 150px;
-    margin-bottom: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 22px;
     margin-right: 12px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 22px;
   }
 }
 
@@ -530,38 +502,8 @@ body {
   font-family: 'Inter-Bold';
 }
 
-.personalList .cards .personalDiv #container .personalDetails .instagramIcon {
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
 .personalList .cards .personalDiv #container .personalDetails .bigTitle {
   font-family: 'Inter-Bold';
-}
-
-.personalList .cards .personalDiv #container .personalDetails .default {
-  border: 2px solid #1d1d1f;
-  -webkit-transition: all 350ms ease-in-out;
-  transition: all 350ms ease-in-out;
-  background: rgba(0, 0, 0, 0);
-  color: #1d1d1f;
-  font-size: 14px;
-  line-height: 1.23536;
-  display: inline-block;
-  font-weight: 600;
-  letter-spacing: -.022em;
-  font-family: 'Inter-Regular';
-  max-width: 150px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-radius: 22px;
-  margin-top: 20px;
 }
 
 .personalList .cards .personalDiv #container .personalImage {
@@ -577,7 +519,7 @@ body {
     padding: 20px 20px 20px 30px;
   }
   .personalList .personalTitle span {
-    margin-left: 5px;
+    margin-left: 6px;
   }
   .personalList .cards {
     width: 100%;
@@ -624,12 +566,6 @@ body {
   .personalList .cards .personalDiv #container .personalDetails .toyInfo {
     font-size: 16px;
     line-height: 28px;
-  }
-  .personalList .cards .personalDiv #container .personalImage {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
   }
 }
 
@@ -682,14 +618,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     text-decoration: none;
-  }
-  .personalList .cards .personalDiv #container .personalDetails .instagramIcon {
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .personalList .cards .personalDiv #container .personalDetails .bigTitle {
     font-size: 20px;
@@ -784,14 +712,6 @@ body {
     display: flex;
     text-decoration: none;
   }
-  .personalList .cards .personalDiv #container .personalDetails .instagramIcon {
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
   .personalList .cards .personalDiv #container .personalDetails .bigTitle {
     font-size: 20px;
   }
@@ -799,12 +719,6 @@ body {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 28px;
-  }
-  .personalList .cards .personalDiv #container .personalImage {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
   }
 }
 

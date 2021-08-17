@@ -52,35 +52,8 @@
                         font-family: 'Inter-Bold';
                     }
 
-                    .instagramIcon {
-                        width: 20px;
-                        height: 20px;
-                        margin-right: 4px;
-                        align-items: flex-end;
-                    }
-
                     .bigTitle {
                         font-family: 'Inter-Bold';
-                    }
-
-                    .default {
-                        border: 2px solid #1d1d1f;
-                        transition: all 350ms ease-in-out;
-                        background: rgba(0, 0, 0, 0);
-                        color: #1d1d1f;
-                        font-size: 14px;
-                        line-height: 1.23536;
-                        display: inline-block;
-                        font-weight: 600;
-                        letter-spacing: -.022em;
-                        font-family: 'Inter-Regular';
-                        max-width: 150px;
-                        padding-left: 22px;
-                        padding-right: 22px;
-                        padding-top: 7px;
-                        padding-bottom: 7px;
-                        border-radius: 22px;
-                        margin-top: 20px
                     }
                 }
 
@@ -103,7 +76,7 @@
             padding: 20px 20px 20px 30px;
 
             span {
-                margin-left: 5px;
+                margin-left: 6px;
             }
         }
 
@@ -149,13 +122,6 @@
                             font-size: 16px;
                             line-height: 28px;
                         }
-                    }
-
-                    .personalImage {
-                        position: relative;
-                        overflow: hidden;
-                        width: 100%;
-                        height: 400px;
                     }
                 }
             }
@@ -206,13 +172,6 @@
                         .instagramUrl {
                             display: flex;
                             text-decoration: none;
-                        }
-
-                        .instagramIcon {
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 4px;
-                            align-items: flex-end;
                         }
 
                         .bigTitle {
@@ -298,13 +257,6 @@
                             text-decoration: none;
                         }
 
-                        .instagramIcon {
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 4px;
-                            align-items: flex-end;
-                        }
-
                         .bigTitle {
                             font-size: 20px;
                         }
@@ -314,13 +266,6 @@
                             font-size: 16px;
                             line-height: 28px;
                         }
-                    }
-
-                    .personalImage {
-                        position: relative;
-                        overflow: hidden;
-                        width: 100%;
-                        height: 400px;
                     }
                 }
             }
