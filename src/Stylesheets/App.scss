@@ -4,51 +4,51 @@
 @import '_Personal';
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .App {
-  height: 100vh;
+    height: 100vh;
 
-  .bottomTitle {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: 'Inter-Light';
-    margin-top: auto;
-    display: flex;
-    align-self: center;
-  }
+    .bottomTitle {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: 'Inter-Light';
+        margin-top: auto;
+        display: flex;
+        align-self: center;
+    }
 }
 
 @media (max-width: 768px) {
-  .App {
-    overflow-x: hidden;
+    .App {
+        overflow-x: hidden;
 
-    .bottomTitle {
-      color: white;
+        .bottomTitle {
+            color: white;
+        }
     }
-  }
 }
 
 @media (min-width: 768px) {
-  .App {
-    overflow: auto;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    font-family: 'Inter-Regular';
-  }
+    .App {
+        overflow: auto;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+        font-family: 'Inter-Regular';
+    }
 
-  .bottomTitle {
-    color: black;
-    margin-bottom: 90px;
-  }
+    .bottomTitle {
+        color: black;
+        margin-bottom: 90px;
+    }
 }
 
 // laptop device
 @media (min-width: 1024px) {
-  .bottomTitle {
-    margin-bottom: 10px;
-  }
+    .bottomTitle {
+        margin-bottom: 10px;
+    }
 }

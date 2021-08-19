@@ -429,6 +429,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .experienceList {
+    height: 100%;
+  }
+}
+
 .personalList {
   margin-top: auto;
   background-color: white;

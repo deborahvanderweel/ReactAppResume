@@ -1,50 +1,50 @@
 @font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter-Bold"),
-    url("../Fonts/Inter-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: "Inter-Bold";
+    src: local("Inter-Bold"),
+        url("../Fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: "Inter-SemiBold";
-  src: local("Inter-SemiBold"),
-    url("../Fonts/Inter-SemiBold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: "Inter-SemiBold";
+    src: local("Inter-SemiBold"),
+        url("../Fonts/Inter-SemiBold.ttf") format("truetype");
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter-Regular"),
-    url("../Fonts/Inter-Regular.ttf") format("truetype");
+    font-family: "Inter-Regular";
+    src: local("Inter-Regular"),
+        url("../Fonts/Inter-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter-Light";
-  src: local("Inter-Light"),
-    url("../Fonts/Inter-Light.ttf") format("truetype");
+    font-family: "Inter-Light";
+    src: local("Inter-Light"),
+        url("../Fonts/Inter-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter-Light";
-  src: local("Inter-Light"),
-    url("../Fonts/Inter-Light.ttf") format("truetype");
+    font-family: "Inter-Light";
+    src: local("Inter-Light"),
+        url("../Fonts/Inter-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
-  src: local("Gilroy-Light"),
-    url("../Fonts/Gilroy-Light.otf") format("truetype");
+    font-family: "Gilroy-Light";
+    src: local("Gilroy-Light"),
+        url("../Fonts/Gilroy-Light.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: local("Gilroy-ExtraBold"),
-    url("../Fonts/Gilroy-ExtraBold.otf") format("truetype");
+    font-family: "Gilroy-ExtraBold";
+    src: local("Gilroy-ExtraBold"),
+        url("../Fonts/Gilroy-ExtraBold.otf") format("truetype");
 }
 
 body {
-  margin: 0;
-  font-family: 'Inter-Regular';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Inter-Regular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
