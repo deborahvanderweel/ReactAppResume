@@ -10,9 +10,9 @@ export default class ExperienceList extends Component {
             <div className="experienceList">
                 <p className="experienceTitle">Work experience <span>&#128188;</span></p>
                 <div className='experienceLanguages'>
-                    {languages.map(language => <Language {...language} />)}
+                    {languages.map(language => <Language {...language} key={language.languageName} />)}
                 </div>
-                {workList.map(work => <Experience {...work} />)}
+                {workList.map(work => <Experience {...work} key={work.jobTitle} />)}
             </div>
         );
     }

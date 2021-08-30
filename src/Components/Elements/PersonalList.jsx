@@ -8,7 +8,7 @@ export default class PersonalList extends Component {
             <div className="personalList">
                 <p className="personalTitle">About me <span>&#128105;</span></p>
                 <div className="cards">
-                    {cards.map(card => <Personal {...card} />)}
+                    {cards.map(card => <Personal {...card} key={card.title} />)}
                 </div>
                 <p className="bottomTitle">scroll for work experience</p>
             </div>

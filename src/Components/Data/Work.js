@@ -1,5 +1,5 @@
 export const workList = [{
-        jobTitle: "Frontend developer",
+        jobTitle: "Frontend developer ",
         companyName: "@Coolblue",
         years: "May 2019 - present",
         information: "Currently working at the sales department, responsible for creating banner ads using Vanilla JavaScript and React.",
