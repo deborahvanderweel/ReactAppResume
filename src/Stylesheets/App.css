@@ -70,6 +70,9 @@ body {
 
 .aboutMe .job a {
   text-decoration: none;
+  color: #0066ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .aboutMe .name {
@@ -313,12 +316,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
-  .experienceList {
-    height: 100%;
-  }
-}
-
 @media (min-width: 650px) {
   .experienceList {
     padding: 0 30px;
@@ -429,7 +426,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1441px) {
   .experienceList {
     height: 100%;
   }
@@ -468,7 +465,7 @@ body {
 }
 
 .personalList .cards .personalDiv img {
-  height: 250px;
+  height: 230px;
   width: 300px;
   border-radius: 5px;
   -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
@@ -656,7 +653,7 @@ body {
   }
   .personalList .personalTitle {
     font-size: 60px;
-    padding: 30px 50px 30px 50px;
+    padding: 50px 50px 30px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -683,7 +680,7 @@ body {
     overflow-y: hidden;
   }
   .personalList .cards .personalDiv img {
-    height: 250px;
+    height: 230px;
     width: 300px;
     border-radius: 5px;
   }

@@ -137,12 +137,6 @@
     }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
-    .experienceList {
-        height: 100%;
-    }
-}
-
 // tablet device
 @media (min-width: 650px) {
     .experienceList {
@@ -269,7 +263,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1441px) {
     .experienceList {
         height: 100%;
     }
