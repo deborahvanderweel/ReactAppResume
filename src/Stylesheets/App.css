@@ -748,22 +748,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .App {
-    overflow-x: hidden;
-  }
   .App .bottomTitle {
     color: white;
   }
 }
 
 @media (min-width: 768px) {
-  .App {
-    overflow: auto;
-    overflow-x: hidden;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
-    font-family: 'Inter-Regular';
-  }
   .bottomTitle {
     color: black;
     margin-bottom: 90px;

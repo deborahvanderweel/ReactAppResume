@@ -24,8 +24,6 @@
 
 @media (max-width: 768px) {
     .App {
-        overflow-x: hidden;
-
         .bottomTitle {
             color: white;
         }
@@ -33,13 +31,6 @@
 }
 
 @media (min-width: 768px) {
-    .App {
-        overflow: auto;
-        overflow-x: hidden;
-        scroll-snap-type: y mandatory;
-        font-family: 'Inter-Regular';
-    }
-
     .bottomTitle {
         color: black;
         margin-bottom: 90px;
