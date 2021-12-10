@@ -28,12 +28,22 @@
             color: white;
         }
     }
+
+    .testDiv>div {
+        min-height: 760px;
+        height: unset !important;
+    }
 }
 
 @media (min-width: 768px) {
     .bottomTitle {
         color: black;
         margin-bottom: 90px;
+    }
+
+    .testDiv>div {
+        min-height: 760px;
+        height: unset;
     }
 }
 
@@ -42,4 +52,8 @@
     .bottomTitle {
         margin-bottom: 10px;
     }
+}
+
+.testDiv {
+    height: 100px;
 }

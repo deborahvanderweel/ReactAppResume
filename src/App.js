@@ -21,11 +21,13 @@ function App() {
                         <PersonalList />
                     </Animator>
                 </ScrollPage>
-                <ScrollPage page={2}>
-                    <Animator animation={FadeUp}>
-                        <ExperienceList />
-                    </Animator>
-                </ScrollPage>
+                <div className="testDiv">
+                    <ScrollPage page={2}>
+                        <Animator animation={FadeUp}>
+                            <ExperienceList />
+                        </Animator>
+                    </ScrollPage>
+                </div>
             </ScrollContainer>
         </div>
     );

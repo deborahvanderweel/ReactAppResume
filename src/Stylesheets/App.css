@@ -413,7 +413,6 @@ body {
     line-height: 26px;
   }
   .experienceList .experienceLanguages {
-    margin-bottom: 48px;
     max-width: 520px;
   }
   .experienceList .experienceLanguages .default {
@@ -751,6 +750,10 @@ body {
   .App .bottomTitle {
     color: white;
   }
+  .testDiv > div {
+    min-height: 760px;
+    height: unset !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -758,11 +761,19 @@ body {
     color: black;
     margin-bottom: 90px;
   }
+  .testDiv > div {
+    min-height: 760px;
+    height: unset;
+  }
 }
 
 @media (min-width: 1024px) {
   .bottomTitle {
     margin-bottom: 10px;
   }
+}
+
+.testDiv {
+  height: 100px;
 }
 /*# sourceMappingURL=App.css.map */
