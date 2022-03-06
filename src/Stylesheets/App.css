@@ -70,7 +70,7 @@ body {
 
 .aboutMe .job a {
   text-decoration: none;
-  color: #0066ff;
+  color: #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -93,15 +93,20 @@ body {
   font-family: 'Inter-SemiBold';
 }
 
+.aboutMe .wave {
+  display: inline-block;
+}
+
 .aboutMe .contactIcons {
   margin-top: 32px;
 }
 
 .aboutMe .contactIcons .contactIcon {
   margin-right: 16px;
-  opacity: 0.25;
+  opacity: 0.5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 999;
 }
 
 .aboutMe .contactIcons .contactIcon:hover {
@@ -448,6 +453,10 @@ body {
 
 .personalList .personalTitle {
   font-family: 'Gilroy-ExtraBold';
+}
+
+.personalList .active {
+  color: red;
 }
 
 .personalList .cards {

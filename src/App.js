@@ -10,25 +10,9 @@ const FadeUp = batch(FadeIn(0, 1), MoveIn(0, 50), MoveOut(0, 50));
 function App() {
     return (
         <div className="App" >
-            <ScrollContainer>
-                <ScrollPage page={0}>
-                    <Animator animation={FadeUp}>
-                        <About />
-                    </Animator>
-                </ScrollPage>
-                <ScrollPage page={1}>
-                    <Animator animation={FadeUp}>
-                        <PersonalList />
-                    </Animator>
-                </ScrollPage>
-                <div className="testDiv">
-                    <ScrollPage page={2}>
-                        <Animator animation={FadeUp}>
-                            <ExperienceList />
-                        </Animator>
-                    </ScrollPage>
-                </div>
-            </ScrollContainer>
+            <About />
+            <PersonalList />
+            <ExperienceList />
         </div>
     );
 }
