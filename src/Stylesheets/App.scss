@@ -11,15 +11,6 @@
 
 .App {
     height: 100vh;
-
-    .bottomTitle {
-        text-transform: uppercase;
-        font-size: 12px;
-        font-family: 'Inter-Light';
-        margin-top: auto;
-        display: flex;
-        align-self: center;
-    }
 }
 
 @media (max-width: 768px) {

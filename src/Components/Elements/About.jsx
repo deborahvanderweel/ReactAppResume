@@ -15,33 +15,47 @@ const About = () => {
 
     useEffect(() => {
         tl
-            // Animation for the wave emoji
+            // animation thats starts right away
             .to('.wave', { rotation: '14.0deg', duration: 0.1, delay: 0.5 })
             .to('.wave', { rotation: '-8.0deg', duration: 0.1 })
             .to('.wave', { rotation: '-14.0deg', duration: 0.1 })
             .to('.wave', { rotation: '-4.0deg', duration: 0.1 })
             .to('.wave', { rotation: '10.0deg', duration: 0.1 })
             .to('.wave', { rotation: '0deg', duration: 0.1 })
-            // Other timeline animation
+
+        // animation that starts when scrolling
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".aboutMe",
+                // start: 'top top',
+                end: '+=3000',
+                scrub: true,
+                pin: true
+            }
+        })
             .to(q(".blue"), {
                 color: '#0066ff',
                 stagger: 0.5,
             })
-            .fromTo(q(".contactImg"), {
-                autoAlpha: 0.5,
-                stagger: 0.5,
-                ease: "power1.in"
-            }, {
-                stagger: 0.5,
-                autoAlpha: 1,
-                duration: 1,
-                ease: "power1.out",
+            .to(".hello", {
+                opacity: 0,
+                x: -50,
+                ease: "power4.inOut"
             })
+            .to(".job", {
+                opacity: 0,
+                x: 50,
+                ease: "power4.inOut"
+            })
+            .to(".sayHi", {
+                scale: 0,
+                ease: "power4.inOut"
+            }, 'hide')
             .to(q(".contactImg"), {
-                autoAlpha: 0.75,
-                stagger: 0.5,
-                ease: "power1.in"
-            })
+                autoAlpha: 0,
+                stagger: 0.2,
+                ease: "power4.inOut"
+            }, 'hide')
     }, []);
 
 
@@ -49,7 +63,7 @@ const About = () => {
         <div className="aboutMe" ref={el}>
             {profile.map((data, key) => {
                 return (
-                    <div style={{ marginTop: 'auto' }} key={key}>
+                    <div key={key}>
                         <div className="name">
                             <p className="hello">Hi! <span className="wave">&#128075;</span></p>
                         </div>
@@ -74,7 +88,7 @@ const About = () => {
                     </div>
                 );
             })}
-            <p className="bottomTitle">scroll to get to know me</p>
+            {/* <p className="bottomTitle">scroll to get to know me</p> */}
         </div>
     )
 }

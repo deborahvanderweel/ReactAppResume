@@ -43,7 +43,6 @@ body {
 }
 
 .aboutMe {
-  margin-top: auto;
   background-color: white;
   height: 100vh;
   scroll-snap-align: start;
@@ -741,18 +740,6 @@ body {
 
 .App {
   height: 100vh;
-}
-
-.App .bottomTitle {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: 'Inter-Light';
-  margin-top: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 @media (max-width: 768px) {
