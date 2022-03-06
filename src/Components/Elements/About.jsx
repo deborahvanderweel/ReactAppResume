@@ -27,8 +27,7 @@ const About = () => {
         gsap.timeline({
             scrollTrigger: {
                 trigger: ".aboutMe",
-                // start: 'top top',
-                end: '+=3000',
+                end: '+=2000',
                 scrub: true,
                 pin: true
             }
@@ -57,7 +56,6 @@ const About = () => {
                 ease: "power4.inOut"
             }, 'hide')
     }, []);
-
 
     return (
         <div className="aboutMe" ref={el}>
@@ -88,7 +86,6 @@ const About = () => {
                     </div>
                 );
             })}
-            {/* <p className="bottomTitle">scroll to get to know me</p> */}
         </div>
     )
 }
