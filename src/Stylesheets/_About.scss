@@ -15,7 +15,7 @@
 
         a {
             text-decoration: none;
-            color: #0066ff;
+            color: #000;
             transition: 0.3s;
         }
     }
@@ -37,13 +37,18 @@
         font-family: 'Inter-SemiBold';
     }
 
+    .wave {
+        display: inline-block;
+    }
+
     .contactIcons {
         margin-top: 32px;
 
         .contactIcon {
             margin-right: 16px;
-            opacity: 0.25;
+            opacity: 0.5;
             transition: 0.3s;
+            z-index: 999;
 
             &:hover {
                 opacity: 1;
