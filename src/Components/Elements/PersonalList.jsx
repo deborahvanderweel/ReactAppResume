@@ -14,7 +14,7 @@ const PersonalList = () => {
             scrollTrigger: {
                 trigger: ".personalList",
                 start: 'top top',
-                end: '+=2000',
+                end: '+=1500',
                 scrub: true,
                 pin: true
             }
