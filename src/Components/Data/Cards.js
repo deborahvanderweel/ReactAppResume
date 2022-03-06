@@ -1,4 +1,5 @@
 export const cards = [{
+        id: 1,
         title: "Collectibles nerd",
         image: "https://i.ibb.co/Tvsqhb5/funko-Pops.jpg",
         information: "I've been collection toys for about 5 years now, mainly funko pops. I created an Instagram account called lovetheloot where I show my collection.",
@@ -7,6 +8,7 @@ export const cards = [{
         label: "@lovetheloot"
     },
     {
+        id: 2,
         title: "Cat mom",
         image: "https://i.ibb.co/myt0RmM/matthy.jpg",
         information: "I'm a real cat mom and decided to create an instagram account for my cat Matthy. It's full of pictures of the little fur ball.",
@@ -15,6 +17,7 @@ export const cards = [{
         label: "@mister.matty"
     },
     {
+        id: 3,
         title: "Traveller",
         image: "https://i.ibb.co/M7Gjf6b/deborah.jpg",
         information: "I love to travel, who doesn't! In 2019 I visited Japan and fell in love with the country. I can't wait to visit Japan again and discover more of Asia.",
