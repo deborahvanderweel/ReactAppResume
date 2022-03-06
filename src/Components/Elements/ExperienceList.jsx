@@ -10,8 +10,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceList = () => {
     const el = useRef();
+
+    useEffect(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".experienceList",
+                start: 'top top',
+                end: '+=1000',
+                scrub: true,
+                pin: true
+            }
+        })
+            .from(".experienceTitle", {
+                duration: 0.3,
+                y: -25,
+                opacity: 0,
+            })
+            .from(".experienceLanguages > .language", {
+                top: -100,
+                ease: "power2",
+                opacity: 0,
+                stagger: 0.1
+            })
+            .from(".experience", {
+                duration: 4,
+                ease: "power2",
+                y: 50,
+                opacity: 0,
+                stagger: 0.5
+            })
+    }, []);
+
     return (
-        <div className="experienceList">
+        <div className="experienceList" rel={el}>
             <p className="experienceTitle">Work experience <span>&#128188;</span></p>
             <div className='experienceLanguages'>
                 {languages.map(language => <Language {...language} key={language.languageName} />)}
